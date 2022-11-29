@@ -5,19 +5,24 @@ public class App {
     
     public static void main(String[] args) {
     
-      Worker worker = new Worker();
-      Queen queen = new Queen(); 
-      Drone drone = new Drone(); 
+        HoneyBee worker = new Worker();
+        HoneyBee queen = new Queen(); 
+        HoneyBee drone = new Drone(); 
 
-      output(worker.doYourJob());
-      output(queen.doYourJob());
-      output(drone.doYourJob());
+        output(worker.doYourJob());
+        output(queen.doYourJob());
+        output(drone.doYourJob());
 
-      output("-----------------");
+        // Das sollte eigentlich nicht gehen!
+        HoneyBee bee = new HoneyBee();
+        output(bee.doYourJob());
 
-      output(worker.fly());
-      output(queen.fly());
-      output(drone.fly());
+
+        output("-----------------");
+
+        output(worker.fly());
+        output(queen.fly());
+        output(drone.fly());
 
 
 
